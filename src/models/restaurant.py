@@ -35,8 +35,8 @@ class Restaurant:
         """
 
         if not self.open:
-            self.open = True                                        ### Estava False, Mudando para True (BUG)
-            self.number_served = 0                                  ### Estava -2, Alterando para 0 (BUG)
+            self.open = True                                        ### Estava False. Alterando para True (BUG)
+            self.number_served = 0                                  ### Estava -2. Alterando para 0 (BUG)
             return f"{self.restaurant_name} agora está aberto!"     ###print(f"{self.restaurant_name} agora está aberto!")
         else:
             return f"{self.restaurant_name} já está aberto!"        ###print(f"{self.restaurant_name} já está aberto!")
@@ -81,7 +81,7 @@ class Restaurant:
         """
 
         if self.open:
-            self.number_served += more_customers                ###Adicionando o +, estava apenas com o = (BUG)
+            self.number_served += more_customers                ### Estava apenas com o =. Alterando para += (BUG)
             return self.number_served                           ### adicionando return da variavel self.number_served
         else:
             return f"{self.restaurant_name} está fechado!"      ###print(f"{self.restaurant_name} está fechado!")

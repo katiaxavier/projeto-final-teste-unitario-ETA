@@ -41,9 +41,9 @@ class IceCreamStand(Restaurant):
 
         if self.flavors:
             if flavor in self.flavors:
-                return f"Temos no momento o sabor {flavor}!"      ### Adicionando o return, trocando self.flavors para flavor (BUG)
+                return f"Temos no momento o sabor {flavor}!"      ### Adicionando o return. # Estava self.flavors. Alterando para flavor (BUG)
             else:
-                return f"Não temos no momento o sabor {flavor}!"          ### Estava self.flavors, Trocando para flavor e adicionando o return (BUG)
+                return f"Não temos no momento o sabor {flavor}!"          ### Estava self.flavors. Alterando para flavor e adicionando o return (BUG)
         else:
             return "Estamos sem estoque atualmente!"            # Adicionando o return
 
