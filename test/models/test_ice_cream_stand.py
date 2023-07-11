@@ -52,7 +52,7 @@ class TestIceCreamStand:
 
         assert result_expected == result
 
-    def test_add_flavor_s(self):
+    def test_add_flavor_out_of_stock(self):
         ice = IceCreamStand('Glacial', 'Sorveteria', [])
         result_expected = "Estamos sem estoque atualmente!"
         result = ice.add_flavor('Cereja')
